@@ -1,0 +1,20 @@
+{
+  "name": "club-management-app",
+  "version": "1.0.0",
+  "description": "Full-featured club management system",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": ["club", "management", "events", "bookings"],
+  "author": "Manveer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
