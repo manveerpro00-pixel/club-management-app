@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Management System - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 16px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #6366f1;
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            background: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #6366f1;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .credentials {
+            background: #f8fafc;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        
+        .credentials h2 {
+            text-align: center;
+            margin-bottom: 32px;
+            color: #1e293b;
+        }
+        
+        .cred-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        
+        .cred-card {
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+            border-left: 4px solid #6366f1;
+        }
+        
+        .cred-card h3 {
+            color: #6366f1;
+            margin-bottom: 12px;
+        }
+        
+        .cred-card code {
+            background: #f1f5f9;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            display: block;
+            margin: 4px 0;
+        }
+        
+        .tech-stack {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        
+        .tech-stack h2 {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+        
+        .tech-badge {
+            background: #6366f1;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 32px 20px;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🎉 Club Management System</h1>
+        <p>Full-featured event management platform with role-based access control</p>
+        <div class="cta-buttons">
+            <a href="https://github.com/manveerpro00-pixel/club-management-app" class="btn btn-primary" target="_blank">
+                View on GitHub
+            </a>
+            <a href="https://github.com/manveerpro00-pixel/club-management-app/archive/refs/heads/main.zip" class="btn btn-secondary">
+                Download ZIP
+            </a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2 style="text-align: center; font-size: 36px; margin-bottom: 16px;">Key Features</h2>
+        <p style="text-align: center; color: #64748b; margin-bottom: 40px;">Everything you need to manage your club events</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">👑</div>
+                <h3>Owner Role</h3>
+                <p>Full control with maintenance mode, settings customization, and user management capabilities.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <h3>Admin Role</h3>
+                <p>Create and manage events, handle bookings, send notifications, and track payments.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">👤</div>
+                <h3>User Role</h3>
+                <p>Browse events, make bookings, receive notifications, and manage personal reservations.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🎫</div>
+                <h3>Event Management</h3>
+                <p>Complete CRUD operations with pricing, capacity tracking, and real-time availability.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Booking System</h3>
+                <p>Smart capacity management, instant confirmations, and payment status tracking.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔔</div>
+                <h3>Notifications</h3>
+                <p>In-app notification system for booking confirmations and admin announcements.</p>
+            </div>
+        </div>
+        
+        <div class="credentials">
+            <h2>🔑 Test Credentials</h2>
+            <div class="cred-grid">
+                <div class="cred-card">
+                    <h3>Owner Account</h3>
+                    <code>Username: owner</code>
+                    <code>Password: owner123</code>
+                    <p style="margin-top: 12px; color: #64748b; font-size: 14px;">Full system control</p>
+                </div>
+                
+                <div class="cred-card">
+                    <h3>Admin Account</h3>
+                    <code>Username: admin</code>
+                    <code>Password: admin123</code>
+                    <p style="margin-top: 12px; color: #64748b; font-size: 14px;">Event management</p>
+                </div>
+                
+                <div class="cred-card">
+                    <h3>User Account</h3>
+                    <code>Username: user</code>
+                    <code>Password: user123</code>
+                    <p style="margin-top: 12px; color: #64748b; font-size: 14px;">Customer access</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tech-stack">
+            <h2>🛠️ Technology Stack</h2>
+            <div class="tech-list">
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express.js</span>
+                <span class="tech-badge">JWT Auth</span>
+                <span class="tech-badge">bcrypt</span>
+                <span class="tech-badge">Vanilla JS</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JSON Storage</span>
+                <span class="tech-badge">Responsive Design</span>
+            </div>
+        </div>
+        
+        <div style="background: #f8fafc; padding: 40px; border-radius: 12px; margin-top: 40px;">
+            <h2 style="text-align: center; margin-bottom: 24px;">🚀 Quick Start</h2>
+            <div style="background: #1e293b; color: #e2e8f0; padding: 24px; border-radius: 8px; font-family: monospace; overflow-x: auto;">
+                <div style="margin-bottom: 8px;"># Clone the repository</div>
+                <div style="color: #10b981;">git clone https://github.com/manveerpro00-pixel/club-management-app.git</div>
+                <div style="margin: 16px 0 8px 0;"># Install dependencies</div>
+                <div style="color: #10b981;">cd club-management-app</div>
+                <div style="color: #10b981;">npm install</div>
+                <div style="margin: 16px 0 8px 0;"># Start the server</div>
+                <div style="color: #10b981;">npm run dev</div>
+                <div style="margin: 16px 0 8px 0;"># Open browser</div>
+                <div style="color: #10b981;">http://localhost:3000</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p><strong>Club Management System</strong></p>
+        <p style="margin-top: 8px; opacity: 0.8;">Built with ❤️ by Manveer</p>
+        <p style="margin-top: 16px;">
+            <a href="https://github.com/manveerpro00-pixel/club-management-app" style="color: white; text-decoration: none;">
+                GitHub Repository →
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
